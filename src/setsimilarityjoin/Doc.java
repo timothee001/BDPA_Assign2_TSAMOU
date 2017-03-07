@@ -1,4 +1,4 @@
-package naiveapproach;
+package setsimilarityjoin;
 
 import java.util.TreeSet;
 

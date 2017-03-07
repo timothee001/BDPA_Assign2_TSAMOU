@@ -142,7 +142,7 @@ public class Preprocessing extends Configured implements Tool{
 	        	   Long docid = entry.getKey();
 	        	   String doccontent = entry.getValue();
 	        	   if (doccontent.matches(".*[a-zA-Z0-9]+.*"))
-	        		   ctxt.write(new Text(doccontent), new Text());
+	        		   ctxt.write(new Text(doccontent.trim()), new Text());
 	        	   		linesCount++;
 	        	}
 	           

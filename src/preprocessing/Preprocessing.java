@@ -2,7 +2,9 @@ package preprocessing;
 
 
 import java.awt.List;
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -102,6 +104,7 @@ public class Preprocessing extends Configured implements Tool{
 	      
 	      
 	      TreeSet<WordDocs> wordDocs = new TreeSet<WordDocs>();
+	      int linesCount=0;
 	      
 	      @Override
 	      public void reduce(Text key, Iterable<LongWritable> values, Context context)
@@ -137,7 +140,21 @@ public class Preprocessing extends Configured implements Tool{
 	        	   String doccontent = entry.getValue();
 	        	   if (doccontent.matches(".*[a-zA-Z0-9]+.*"))
 	        		   ctxt.write(new Text(doccontent), new Text());
+	        	   		linesCount++;
 	        	}
+	           
+	           
+	           try{
+	               Path pt=new Path("outputPreprocessingLines");
+	               FileSystem fs = FileSystem.get(new Configuration());
+	               BufferedWriter br=new BufferedWriter(new OutputStreamWriter(fs.create(pt,true)));
+
+	               String line="Number of outputs records " +linesCount;         
+	               br.write(line);
+	               br.close();
+	         }catch(Exception e){
+	                 System.out.println("File not found");
+	         }
 	       }
 	      
 	      

@@ -33,6 +33,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
+import ReadCSV.ReadCSV;
 
 import preprocessing.WordCount;
 
@@ -82,14 +83,16 @@ public class Preprocessing extends Configured implements Tool{
 	public static class Map extends Mapper<LongWritable, Text, Text, LongWritable> {
 	      private final static LongWritable ONE = new LongWritable(1);
 	      private Text phrase = new Text();
-	     
+	      private ArrayList<String> stopwords =  ReadCSV.getStopWords();
+	    		  
+	    		  
 	      @Override
 	      public void map(LongWritable key, Text value, Context context)
 	              throws IOException, InterruptedException {
 	    	 HashSet<String> words = new  HashSet<String> ();
 	         for (String token: value.toString().split("\\s+")) {
 	        	 token = token.replaceAll("[^a-zA-Z0-9 ]", "");
-	        	 if(!words.contains(token)){
+	        	 if(!words.contains(token) && !stopwords.contains(token.toLowerCase())){
 	        		 context.write(new Text(token), key);
 	        	 }
 	        	 words.add(token);

@@ -159,9 +159,12 @@ public class AllPairWise extends Configured implements Tool{
 	        	  count++;
 	          }
 	    	  
+	    	  
+	    	  String [] keys = key.toString().split("_");
 	    	  Double sim = AllPairWise.similarity(s1.toString(), s2.toString());
 	    	  if(sim>=AllPairWise.thresold)
-	    		  context.write(new Text("("+s1+","+s2+")"), new Text(sim.toString()));
+	    		  context.write(new Text("(d"+keys[0]+",d"+keys[1]+")"), new Text(sim.toString()));
+	    	  
 	    	  
 	    	  
 	         //context.write(key,new LongWritable(sum));

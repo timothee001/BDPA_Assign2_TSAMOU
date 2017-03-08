@@ -42,7 +42,7 @@ import preprocessing.WordCount;
 
 public class InvertedIndex extends Configured implements Tool{
 
-	static double thresold =0.3;
+	static double thresold =0.8;
 	static HashMap<Long,String> docs = new HashMap<Long,String>();
 
 	public static void main(String[] args) throws Exception {

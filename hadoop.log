@@ -722,3 +722,944 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: 1
 		Bytes Read=1671366
 	File Output Format Counters 
 		Bytes Written=4171836
+2017-03-08 05:03:58,583 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 05:04:00,220 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2017-03-08 05:04:00,226 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2017-03-08 05:04:01,785 WARN org.apache.hadoop.mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2017-03-08 05:04:01,918 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2017-03-08 05:04:02,431 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2017-03-08 05:04:03,628 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1834054393_0001
+2017-03-08 05:04:04,553 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2017-03-08 05:04:04,556 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1834054393_0001
+2017-03-08 05:04:04,583 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2017-03-08 05:04:04,630 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:04:04,636 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2017-03-08 05:04:04,945 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2017-03-08 05:04:04,955 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1834054393_0001_m_000000_0
+2017-03-08 05:04:05,112 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:04:05,190 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:04:05,208 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/inputSimilarity/part-r-00000:0+1671366
+2017-03-08 05:04:05,326 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2017-03-08 05:04:05,327 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2017-03-08 05:04:05,327 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2017-03-08 05:04:05,328 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2017-03-08 05:04:05,328 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2017-03-08 05:04:05,353 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2017-03-08 05:04:05,570 INFO org.apache.hadoop.mapreduce.Job: Job job_local1834054393_0001 running in uber mode : false
+2017-03-08 05:04:05,572 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2017-03-08 05:04:09,733 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:04:09,743 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 55567937; bufvoid = 104857600
+2017-03-08 05:04:09,747 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 19134868(76539472); length = 7079529/6553600
+2017-03-08 05:04:09,750 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 62707169 kvi 15676788(62707152)
+2017-03-08 05:04:11,247 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:11,595 INFO org.apache.hadoop.mapreduce.Job:  map 1% reduce 0%
+2017-03-08 05:04:14,273 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:17,278 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:20,279 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:23,003 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2017-03-08 05:04:23,004 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 62707169 kv 15676788(62707152) kvi 13962088(55848352)
+2017-03-08 05:04:23,281 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:23,904 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:04:23,905 INFO org.apache.hadoop.mapred.MapTask: bufstart = 62707169; bufend = 13677143; bufvoid = 104857600
+2017-03-08 05:04:23,905 INFO org.apache.hadoop.mapred.MapTask: kvstart = 15676788(62707152); kvend = 8662156(34648624); length = 7014633/6553600
+2017-03-08 05:04:23,906 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 20816359 kvi 5204084(20816336)
+2017-03-08 05:04:26,283 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:26,618 INFO org.apache.hadoop.mapreduce.Job:  map 2% reduce 0%
+2017-03-08 05:04:29,285 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:32,287 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:33,773 INFO org.apache.hadoop.mapred.MapTask: Finished spill 1
+2017-03-08 05:04:33,774 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 20816359 kv 5204084(20816336) kvi 3532872(14131488)
+2017-03-08 05:04:34,614 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:04:34,615 INFO org.apache.hadoop.mapred.MapTask: bufstart = 20816359; bufend = 77142055; bufvoid = 104857600
+2017-03-08 05:04:34,616 INFO org.apache.hadoop.mapred.MapTask: kvstart = 5204084(20816336); kvend = 24528388(98113552); length = 6890097/6553600
+2017-03-08 05:04:34,616 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 84281271 kvi 21070312(84281248)
+2017-03-08 05:04:35,289 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:38,291 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:41,293 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:44,296 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:45,238 INFO org.apache.hadoop.mapred.MapTask: Finished spill 2
+2017-03-08 05:04:45,239 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 84281271 kv 21070312(84281248) kvi 19348256(77393024)
+2017-03-08 05:04:46,191 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:04:46,192 INFO org.apache.hadoop.mapred.MapTask: bufstart = 84281271; bufend = 35382289; bufvoid = 104857600
+2017-03-08 05:04:46,192 INFO org.apache.hadoop.mapred.MapTask: kvstart = 21070312(84281248); kvend = 14088456(56353824); length = 6981857/6553600
+2017-03-08 05:04:46,193 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 42521521 kvi 10630376(42521504)
+2017-03-08 05:04:47,298 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:50,300 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:53,301 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:54,321 INFO org.apache.hadoop.mapred.MapTask: Finished spill 3
+2017-03-08 05:04:54,322 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 42521521 kv 10630376(42521504) kvi 8922964(35691856)
+2017-03-08 05:04:55,239 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:04:55,240 INFO org.apache.hadoop.mapred.MapTask: bufstart = 42521521; bufend = 98367795; bufvoid = 104857600
+2017-03-08 05:04:55,240 INFO org.apache.hadoop.mapred.MapTask: kvstart = 10630376(42521504); kvend = 3620432(14481728); length = 7009945/6553600
+2017-03-08 05:04:55,241 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 649427 kvi 162352(649408)
+2017-03-08 05:04:56,303 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:04:59,305 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:02,307 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:05,308 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:08,310 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:09,431 INFO org.apache.hadoop.mapred.MapTask: Finished spill 4
+2017-03-08 05:05:09,432 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 649427 kv 162352(649408) kvi 24659960(98639840)
+2017-03-08 05:05:10,293 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:05:10,293 INFO org.apache.hadoop.mapred.MapTask: bufstart = 649427; bufend = 56759575; bufvoid = 104857600
+2017-03-08 05:05:10,294 INFO org.apache.hadoop.mapred.MapTask: kvstart = 162352(649408); kvend = 19432764(77731056); length = 6943989/6553600
+2017-03-08 05:05:10,294 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 63750055 kvi 15937508(63750032)
+2017-03-08 05:05:11,311 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:11,674 INFO org.apache.hadoop.mapreduce.Job:  map 3% reduce 0%
+2017-03-08 05:05:14,392 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:17,461 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:20,579 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:23,612 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:26,714 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:29,749 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:32,780 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:35,951 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:39,076 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:41,872 INFO org.apache.hadoop.mapred.MapTask: Finished spill 5
+2017-03-08 05:05:41,874 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 63750055 kv 15937508(63750032) kvi 14214240(56856960)
+2017-03-08 05:05:42,077 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:42,952 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:05:42,952 INFO org.apache.hadoop.mapred.MapTask: bufstart = 63750055; bufend = 15144455; bufvoid = 104857600
+2017-03-08 05:05:42,954 INFO org.apache.hadoop.mapred.MapTask: kvstart = 15937508(63750032); kvend = 9028992(36115968); length = 6908517/6553600
+2017-03-08 05:05:42,955 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 22134951 kvi 5533732(22134928)
+2017-03-08 05:05:45,079 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:48,081 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:51,083 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:53,483 INFO org.apache.hadoop.mapred.MapTask: Finished spill 6
+2017-03-08 05:05:53,484 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 22134951 kv 5533732(22134928) kvi 3836480(15345920)
+2017-03-08 05:05:54,085 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:05:54,765 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:05:54,766 INFO org.apache.hadoop.mapred.MapTask: bufstart = 22134951; bufend = 78231028; bufvoid = 104857600
+2017-03-08 05:05:54,766 INFO org.apache.hadoop.mapred.MapTask: kvstart = 5533732(22134928); kvend = 24800632(99202528); length = 6947501/6553600
+2017-03-08 05:05:54,767 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 85221508 kvi 21305372(85221488)
+2017-03-08 05:16:25,940 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 05:16:27,965 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2017-03-08 05:16:27,971 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2017-03-08 05:16:28,679 WARN org.apache.hadoop.mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2017-03-08 05:16:28,942 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2017-03-08 05:16:29,274 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2017-03-08 05:16:29,914 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local74131258_0001
+2017-03-08 05:16:30,901 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2017-03-08 05:16:30,905 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local74131258_0001
+2017-03-08 05:16:30,932 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2017-03-08 05:16:30,977 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:16:30,979 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2017-03-08 05:16:31,792 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2017-03-08 05:16:31,795 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local74131258_0001_m_000000_0
+2017-03-08 05:16:31,934 INFO org.apache.hadoop.mapreduce.Job: Job job_local74131258_0001 running in uber mode : false
+2017-03-08 05:16:31,936 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2017-03-08 05:16:32,227 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:16:32,355 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:16:32,411 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/inputSimilarity/part-r-00000:0+1671366
+2017-03-08 05:16:32,841 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2017-03-08 05:16:32,844 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2017-03-08 05:16:32,845 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2017-03-08 05:16:32,846 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2017-03-08 05:16:32,849 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2017-03-08 05:16:32,879 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2017-03-08 05:16:34,882 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:16:34,884 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 55606937; bufvoid = 104857600
+2017-03-08 05:16:34,884 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 19144604(76578416); length = 7069793/6553600
+2017-03-08 05:16:34,884 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 62746153 kvi 15686532(62746128)
+2017-03-08 05:16:38,353 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:16:38,978 INFO org.apache.hadoop.mapreduce.Job:  map 2% reduce 0%
+2017-03-08 05:16:41,355 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:16:44,357 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:16:46,965 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2017-03-08 05:16:46,967 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 62746153 kv 15686532(62746128) kvi 14034552(56138208)
+2017-03-08 05:16:47,359 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:16:48,561 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:16:48,563 INFO org.apache.hadoop.mapred.MapTask: bufstart = 62746153; bufend = 14153071; bufvoid = 104857600
+2017-03-08 05:16:48,567 INFO org.apache.hadoop.mapred.MapTask: kvstart = 15686532(62746128); kvend = 8781144(35124576); length = 6905389/6553600
+2017-03-08 05:16:48,568 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 21143567 kvi 5285884(21143536)
+2017-03-08 05:16:50,367 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:16:53,369 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:16:55,524 INFO org.apache.hadoop.mapred.MapTask: Finished spill 1
+2017-03-08 05:16:55,526 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 21143567 kv 5285884(21143536) kvi 3538272(14153088)
+2017-03-08 05:16:56,373 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:16:56,643 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:16:56,644 INFO org.apache.hadoop.mapred.MapTask: bufstart = 21143567; bufend = 77074587; bufvoid = 104857600
+2017-03-08 05:16:56,644 INFO org.apache.hadoop.mapred.MapTask: kvstart = 5285884(21143536); kvend = 24511524(98046096); length = 6988761/6553600
+2017-03-08 05:16:56,644 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 84065083 kvi 21016264(84065056)
+2017-03-08 05:16:57,001 INFO org.apache.hadoop.mapreduce.Job:  map 3% reduce 0%
+2017-03-08 05:16:59,376 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:02,379 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:05,049 INFO org.apache.hadoop.mapred.MapTask: Finished spill 2
+2017-03-08 05:17:05,050 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 84065083 kv 21016264(84065056) kvi 19321360(77285440)
+2017-03-08 05:17:05,380 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:06,001 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:17:06,002 INFO org.apache.hadoop.mapred.MapTask: bufstart = 84065083; bufend = 35497760; bufvoid = 104857594
+2017-03-08 05:17:06,003 INFO org.apache.hadoop.mapred.MapTask: kvstart = 21016264(84065056); kvend = 14117316(56469264); length = 6898949/6553600
+2017-03-08 05:17:06,004 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 42488256 kvi 10622060(42488240)
+2017-03-08 05:17:08,384 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:11,385 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:12,286 INFO org.apache.hadoop.mapred.MapTask: Finished spill 3
+2017-03-08 05:17:12,288 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 42488256 kv 10622060(42488240) kvi 8946200(35784800)
+2017-03-08 05:17:13,098 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:17:13,098 INFO org.apache.hadoop.mapred.MapTask: bufstart = 42488256; bufend = 98952043; bufvoid = 104857600
+2017-03-08 05:17:13,099 INFO org.apache.hadoop.mapred.MapTask: kvstart = 10622060(42488240); kvend = 3766492(15065968); length = 6855569/6553600
+2017-03-08 05:17:13,099 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 1084939 kvi 271228(1084912)
+2017-03-08 05:17:14,387 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:17,389 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:20,391 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:21,063 INFO org.apache.hadoop.mapred.MapTask: Finished spill 4
+2017-03-08 05:17:21,064 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 1084939 kv 271228(1084912) kvi 24795168(99180672)
+2017-03-08 05:17:22,064 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:17:22,065 INFO org.apache.hadoop.mapred.MapTask: bufstart = 1084939; bufend = 57558710; bufvoid = 104857600
+2017-03-08 05:17:22,067 INFO org.apache.hadoop.mapred.MapTask: kvstart = 271228(1084912); kvend = 19632560(78530240); length = 6853069/6553600
+2017-03-08 05:17:22,067 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 64549206 kvi 16137296(64549184)
+2017-03-08 05:17:23,392 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:24,026 INFO org.apache.hadoop.mapreduce.Job:  map 4% reduce 0%
+2017-03-08 05:17:26,394 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:29,396 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:30,923 INFO org.apache.hadoop.mapred.MapTask: Finished spill 5
+2017-03-08 05:17:30,924 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 64549206 kv 16137296(64549184) kvi 14408452(57633808)
+2017-03-08 05:17:31,826 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:17:31,827 INFO org.apache.hadoop.mapred.MapTask: bufstart = 64549206; bufend = 15404445; bufvoid = 104857600
+2017-03-08 05:17:31,828 INFO org.apache.hadoop.mapred.MapTask: kvstart = 16137296(64549184); kvend = 9093992(36375968); length = 7043305/6553600
+2017-03-08 05:17:31,829 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 22394941 kvi 5598728(22394912)
+2017-03-08 05:17:32,397 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:35,399 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:38,400 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:41,404 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:44,021 INFO org.apache.hadoop.mapred.MapTask: Finished spill 6
+2017-03-08 05:17:44,025 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 22394941 kv 5598728(22394912) kvi 3886908(15547632)
+2017-03-08 05:17:44,405 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:44,893 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:17:44,894 INFO org.apache.hadoop.mapred.MapTask: bufstart = 22394941; bufend = 78761495; bufvoid = 104857600
+2017-03-08 05:17:44,894 INFO org.apache.hadoop.mapred.MapTask: kvstart = 5598728(22394912); kvend = 24933244(99732976); length = 6879885/6553600
+2017-03-08 05:17:44,895 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 85751975 kvi 21437988(85751952)
+2017-03-08 05:17:47,407 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:50,408 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:52,989 INFO org.apache.hadoop.mapred.MapTask: Finished spill 7
+2017-03-08 05:17:52,990 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 85751975 kv 21437988(85751952) kvi 19811008(79244032)
+2017-03-08 05:17:53,410 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:53,975 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:17:53,976 INFO org.apache.hadoop.mapred.MapTask: bufstart = 85751975; bufend = 37750797; bufvoid = 104857600
+2017-03-08 05:17:53,976 INFO org.apache.hadoop.mapred.MapTask: kvstart = 21437988(85751952); kvend = 14680576(58722304); length = 6757413/6553600
+2017-03-08 05:17:53,977 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 44741293 kvi 11185316(44741264)
+2017-03-08 05:17:56,412 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:17:57,064 INFO org.apache.hadoop.mapreduce.Job:  map 5% reduce 0%
+2017-03-08 05:17:59,415 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:02,417 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:04,178 INFO org.apache.hadoop.mapred.MapTask: Finished spill 8
+2017-03-08 05:18:04,179 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 44741293 kv 11185316(44741264) kvi 9437704(37750816)
+2017-03-08 05:18:05,025 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:18:05,026 INFO org.apache.hadoop.mapred.MapTask: bufstart = 44741293; bufend = 100847142; bufvoid = 104857600
+2017-03-08 05:18:05,026 INFO org.apache.hadoop.mapred.MapTask: kvstart = 11185316(44741264); kvend = 4240268(16961072); length = 6945049/6553600
+2017-03-08 05:18:05,027 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 2980038 kvi 745004(2980016)
+2017-03-08 05:18:05,419 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:08,420 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:11,423 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:13,154 INFO org.apache.hadoop.mapred.MapTask: Finished spill 9
+2017-03-08 05:18:13,156 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 2980038 kv 745004(2980016) kvi 25327388(101309552)
+2017-03-08 05:18:14,053 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:18:14,054 INFO org.apache.hadoop.mapred.MapTask: bufstart = 2980038; bufend = 59831248; bufvoid = 104857600
+2017-03-08 05:18:14,055 INFO org.apache.hadoop.mapred.MapTask: kvstart = 745004(2980016); kvend = 20200692(80802768); length = 6758713/6553600
+2017-03-08 05:18:14,055 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 66821744 kvi 16705432(66821728)
+2017-03-08 05:18:14,425 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:17,427 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:20,429 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:23,430 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:23,883 INFO org.apache.hadoop.mapred.MapTask: Finished spill 10
+2017-03-08 05:18:23,887 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 66821744 kv 16705432(66821728) kvi 15041544(60166176)
+2017-03-08 05:18:25,075 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:18:25,076 INFO org.apache.hadoop.mapred.MapTask: bufstart = 66821744; bufend = 18771509; bufvoid = 104857599
+2017-03-08 05:18:25,076 INFO org.apache.hadoop.mapred.MapTask: kvstart = 16705432(66821728); kvend = 9935760(39743040); length = 6769673/6553600
+2017-03-08 05:18:25,077 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 25762005 kvi 6440496(25761984)
+2017-03-08 05:18:26,432 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:29,433 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:32,435 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:34,924 INFO org.apache.hadoop.mapred.MapTask: Finished spill 11
+2017-03-08 05:18:34,926 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 25762005 kv 6440496(25761984) kvi 4873444(19493776)
+2017-03-08 05:18:35,437 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:18:36,980 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:18:36,982 INFO org.apache.hadoop.mapred.MapTask: bufstart = 25762005; bufend = 82604876; bufvoid = 104857600
+2017-03-08 05:18:36,982 INFO org.apache.hadoop.mapred.MapTask: kvstart = 6440496(25761984); kvend = 25894096(103576384); length = 6760801/6553600
+2017-03-08 05:18:36,983 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 89595372 kvi 22398836(89595344)
+2017-03-08 05:21:37,776 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 05:21:40,564 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2017-03-08 05:21:40,579 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2017-03-08 05:21:41,180 WARN org.apache.hadoop.mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2017-03-08 05:21:41,445 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2017-03-08 05:21:41,920 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2017-03-08 05:21:42,482 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1928460410_0001
+2017-03-08 05:21:43,492 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2017-03-08 05:21:43,499 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1928460410_0001
+2017-03-08 05:21:43,557 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2017-03-08 05:21:43,699 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:21:43,714 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2017-03-08 05:21:44,088 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2017-03-08 05:21:44,089 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1928460410_0001_m_000000_0
+2017-03-08 05:21:44,493 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:21:44,525 INFO org.apache.hadoop.mapreduce.Job: Job job_local1928460410_0001 running in uber mode : false
+2017-03-08 05:21:44,528 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2017-03-08 05:21:44,630 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:21:44,647 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/inputSimilarity/part-r-00000:0+1671366
+2017-03-08 05:21:44,836 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2017-03-08 05:21:44,837 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2017-03-08 05:21:44,838 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2017-03-08 05:21:44,838 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2017-03-08 05:21:44,840 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2017-03-08 05:21:44,909 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2017-03-08 05:21:46,953 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:21:46,954 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 55584583; bufvoid = 104857600
+2017-03-08 05:21:46,954 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 19139028(76556112); length = 7075369/6553600
+2017-03-08 05:21:46,956 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 62723815 kvi 15680948(62723792)
+2017-03-08 05:21:50,563 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:21:51,557 INFO org.apache.hadoop.mapreduce.Job:  map 1% reduce 0%
+2017-03-08 05:21:53,568 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:21:56,569 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:21:59,571 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:01,577 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2017-03-08 05:22:01,580 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 62723815 kv 15680948(62723792) kvi 13968716(55874864)
+2017-03-08 05:22:02,573 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:02,764 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:22:02,766 INFO org.apache.hadoop.mapred.MapTask: bufstart = 62723815; bufend = 13699627; bufvoid = 104857600
+2017-03-08 05:22:02,767 INFO org.apache.hadoop.mapred.MapTask: kvstart = 15680948(62723792); kvend = 8667780(34671120); length = 7013169/6553600
+2017-03-08 05:22:02,775 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 20838843 kvi 5209704(20838816)
+2017-03-08 05:22:05,575 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:06,578 INFO org.apache.hadoop.mapreduce.Job:  map 2% reduce 0%
+2017-03-08 05:22:08,578 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:09,938 INFO org.apache.hadoop.mapred.MapTask: Finished spill 1
+2017-03-08 05:22:09,939 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 20838843 kv 5209704(20838816) kvi 3541344(14165376)
+2017-03-08 05:22:11,320 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:22:11,321 INFO org.apache.hadoop.mapred.MapTask: bufstart = 20838843; bufend = 77155938; bufvoid = 104857600
+2017-03-08 05:22:11,323 INFO org.apache.hadoop.mapred.MapTask: kvstart = 5209704(20838816); kvend = 24531868(98127472); length = 6892237/6553600
+2017-03-08 05:22:11,324 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 84295170 kvi 21073788(84295152)
+2017-03-08 05:22:11,580 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:14,584 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:17,588 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:17,632 INFO org.apache.hadoop.mapred.MapTask: Finished spill 2
+2017-03-08 05:22:17,633 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 84295170 kv 21073788(84295152) kvi 19361152(77444608)
+2017-03-08 05:22:18,702 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:22:18,703 INFO org.apache.hadoop.mapred.MapTask: bufstart = 84295170; bufend = 35415912; bufvoid = 104857600
+2017-03-08 05:22:18,703 INFO org.apache.hadoop.mapred.MapTask: kvstart = 21073788(84295152); kvend = 14096856(56387424); length = 6976933/6553600
+2017-03-08 05:22:18,705 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 42406408 kvi 10601596(42406384)
+2017-03-08 05:22:20,590 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:23,591 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:24,840 INFO org.apache.hadoop.mapred.MapTask: Finished spill 3
+2017-03-08 05:22:24,841 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 42406408 kv 10601596(42406384) kvi 8874448(35497792)
+2017-03-08 05:22:26,254 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:22:26,258 INFO org.apache.hadoop.mapred.MapTask: bufstart = 42406408; bufend = 98253303; bufvoid = 104857600
+2017-03-08 05:22:26,259 INFO org.apache.hadoop.mapred.MapTask: kvstart = 10601596(42406384); kvend = 3591800(14367200); length = 7009797/6553600
+2017-03-08 05:22:26,259 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 534919 kvi 133724(534896)
+2017-03-08 05:22:26,594 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:29,596 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:32,164 INFO org.apache.hadoop.mapred.MapTask: Finished spill 4
+2017-03-08 05:22:32,165 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 534919 kv 133724(534896) kvi 24637072(98548288)
+2017-03-08 05:22:32,598 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:22:32,619 INFO org.apache.hadoop.mapreduce.Job:  map 3% reduce 0%
+2017-03-08 05:22:33,081 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:22:33,083 INFO org.apache.hadoop.mapred.MapTask: bufstart = 534919; bufend = 56629291; bufvoid = 104857600
+2017-03-08 05:22:33,083 INFO org.apache.hadoop.mapred.MapTask: kvstart = 133724(534896); kvend = 19400200(77600800); length = 6947925/6553600
+2017-03-08 05:22:33,083 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 63619787 kvi 15904940(63619760)
+2017-03-08 05:23:35,601 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 05:23:38,606 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2017-03-08 05:23:38,628 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2017-03-08 05:23:39,154 WARN org.apache.hadoop.mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2017-03-08 05:23:39,376 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2017-03-08 05:23:40,035 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2017-03-08 05:23:40,896 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1118109265_0001
+2017-03-08 05:23:42,396 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2017-03-08 05:23:42,428 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1118109265_0001
+2017-03-08 05:23:42,442 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2017-03-08 05:23:42,493 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:23:42,501 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2017-03-08 05:23:42,908 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2017-03-08 05:23:42,911 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1118109265_0001_m_000000_0
+2017-03-08 05:23:43,146 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:23:43,265 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:23:43,284 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/inputSimilarity/part-r-00000:0+52467
+2017-03-08 05:23:43,461 INFO org.apache.hadoop.mapreduce.Job: Job job_local1118109265_0001 running in uber mode : false
+2017-03-08 05:23:43,537 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2017-03-08 05:23:43,581 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2017-03-08 05:23:43,582 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2017-03-08 05:23:43,583 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2017-03-08 05:23:43,583 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2017-03-08 05:23:43,584 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2017-03-08 05:23:43,611 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2017-03-08 05:23:45,471 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:23:45,472 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 55560321; bufvoid = 104857600
+2017-03-08 05:23:45,473 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 19132960(76531840); length = 7081437/6553600
+2017-03-08 05:23:45,474 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 62699553 kvi 15674884(62699536)
+2017-03-08 05:23:49,424 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:23:49,585 INFO org.apache.hadoop.mapreduce.Job:  map 38% reduce 0%
+2017-03-08 05:23:52,432 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:23:55,433 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:23:56,954 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2017-03-08 05:23:56,955 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 62699553 kv 15674884(62699536) kvi 13966840(55867360)
+2017-03-08 05:23:58,049 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:23:58,050 INFO org.apache.hadoop.mapred.MapTask: bufstart = 62699553; bufend = 13667968; bufvoid = 104857600
+2017-03-08 05:23:58,050 INFO org.apache.hadoop.mapred.MapTask: kvstart = 15674884(62699536); kvend = 8659864(34639456); length = 7015021/6553600
+2017-03-08 05:23:58,051 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 20807184 kvi 5201792(20807168)
+2017-03-08 05:23:58,435 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:23:58,635 INFO org.apache.hadoop.mapreduce.Job:  map 50% reduce 0%
+2017-03-08 05:24:01,437 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:24:01,638 INFO org.apache.hadoop.mapreduce.Job:  map 51% reduce 0%
+2017-03-08 05:24:04,439 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:24:06,056 INFO org.apache.hadoop.mapred.MapTask: Finished spill 1
+2017-03-08 05:24:06,057 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 20807184 kv 5201792(20807168) kvi 3535424(14141696)
+2017-03-08 05:24:07,271 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:24:07,272 INFO org.apache.hadoop.mapred.MapTask: bufstart = 20807184; bufend = 77115376; bufvoid = 104857600
+2017-03-08 05:24:07,272 INFO org.apache.hadoop.mapred.MapTask: kvstart = 5201792(20807168); kvend = 24521724(98086896); length = 6894469/6553600
+2017-03-08 05:24:07,273 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 84254608 kvi 21063648(84254592)
+2017-03-08 05:24:07,441 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:24:07,662 INFO org.apache.hadoop.mapreduce.Job:  map 61% reduce 0%
+2017-03-08 05:24:10,481 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:24:10,673 INFO org.apache.hadoop.mapreduce.Job:  map 62% reduce 0%
+2017-03-08 05:24:13,483 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:24:14,268 INFO org.apache.hadoop.mapred.MapTask: Finished spill 2
+2017-03-08 05:24:14,269 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 84254608 kv 21063648(84254592) kvi 19357408(77429632)
+2017-03-08 05:24:14,883 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:24:14,885 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2017-03-08 05:24:14,885 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:24:14,885 INFO org.apache.hadoop.mapred.MapTask: bufstart = 84254608; bufend = 23239223; bufvoid = 104857595
+2017-03-08 05:24:14,886 INFO org.apache.hadoop.mapred.MapTask: kvstart = 21063648(84254592); kvend = 15604140(62416560); length = 5459509/6553600
+2017-03-08 05:24:16,490 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort
+2017-03-08 05:24:16,680 INFO org.apache.hadoop.mapreduce.Job:  map 67% reduce 0%
+2017-03-08 05:24:19,492 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort
+2017-03-08 05:24:20,654 INFO org.apache.hadoop.mapred.MapTask: Finished spill 3
+2017-03-08 05:24:20,682 INFO org.apache.hadoop.mapred.Merger: Merging 4 sorted segments
+2017-03-08 05:24:20,722 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 4 segments left of total size: 224761934 bytes
+2017-03-08 05:24:22,493 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:24:22,722 INFO org.apache.hadoop.mapreduce.Job:  map 72% reduce 0%
+2017-03-08 05:24:25,495 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:24:25,727 INFO org.apache.hadoop.mapreduce.Job:  map 83% reduce 0%
+2017-03-08 05:24:28,497 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:24:28,730 INFO org.apache.hadoop.mapreduce.Job:  map 94% reduce 0%
+2017-03-08 05:24:30,343 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1118109265_0001_m_000000_0 is done. And is in the process of committing
+2017-03-08 05:24:30,349 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort
+2017-03-08 05:24:30,349 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1118109265_0001_m_000000_0' done.
+2017-03-08 05:24:30,350 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1118109265_0001_m_000000_0
+2017-03-08 05:24:30,351 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2017-03-08 05:24:30,361 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2017-03-08 05:24:30,362 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1118109265_0001_r_000000_0
+2017-03-08 05:24:30,452 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:24:30,455 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:24:30,475 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@48cc9f29
+2017-03-08 05:24:30,705 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=1254044416, maxSingleShuffleLimit=313511104, mergeThreshold=827669376, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2017-03-08 05:24:30,733 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 0%
+2017-03-08 05:24:30,737 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local1118109265_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2017-03-08 05:24:31,071 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1118109265_0001_m_000000_0 decomp: 224761964 len: 224761968 to MEMORY
+2017-03-08 05:24:31,744 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 224761964 bytes from map-output for attempt_local1118109265_0001_m_000000_0
+2017-03-08 05:24:31,751 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 224761964, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->224761964
+2017-03-08 05:24:31,757 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2017-03-08 05:24:31,758 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2017-03-08 05:24:31,760 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2017-03-08 05:24:31,767 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2017-03-08 05:24:31,770 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 224761954 bytes
+2017-03-08 05:24:36,458 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > sort
+2017-03-08 05:24:36,740 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 57%
+2017-03-08 05:24:38,115 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 1 segments, 224761964 bytes to disk to satisfy reduce memory limit
+2017-03-08 05:24:38,116 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 224761968 bytes from disk
+2017-03-08 05:24:38,121 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2017-03-08 05:24:38,122 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2017-03-08 05:24:38,122 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 224761954 bytes
+2017-03-08 05:24:38,123 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > sort
+2017-03-08 05:24:38,290 INFO org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2017-03-08 05:24:39,461 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:24:39,743 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 67%
+2017-03-08 05:24:42,463 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:24:42,747 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 72%
+2017-03-08 05:24:45,478 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:24:45,750 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 76%
+2017-03-08 05:24:48,480 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:24:48,753 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 81%
+2017-03-08 05:24:51,483 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:24:51,760 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 86%
+2017-03-08 05:24:54,484 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:24:54,765 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 91%
+2017-03-08 05:24:57,485 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:24:57,769 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 94%
+2017-03-08 05:25:00,487 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:25:00,774 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 97%
+2017-03-08 05:25:02,708 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1118109265_0001_r_000000_0 is done. And is in the process of committing
+2017-03-08 05:25:02,721 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:25:02,721 INFO org.apache.hadoop.mapred.Task: Task attempt_local1118109265_0001_r_000000_0 is allowed to commit now
+2017-03-08 05:25:02,748 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1118109265_0001_r_000000_0' to file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/outputAllPairWise/_temporary/0/task_local1118109265_0001_r_000000
+2017-03-08 05:25:02,753 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:25:02,753 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1118109265_0001_r_000000_0' done.
+2017-03-08 05:25:02,754 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1118109265_0001_r_000000_0
+2017-03-08 05:25:02,754 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2017-03-08 05:25:02,777 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2017-03-08 05:25:04,780 INFO org.apache.hadoop.mapreduce.Job: Job job_local1118109265_0001 completed successfully
+2017-03-08 05:25:04,865 INFO org.apache.hadoop.mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=899153266
+		FILE: Number of bytes written=1124391563
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2572
+		Map output records=6612612
+		Map output bytes=211536738
+		Map output materialized bytes=224761968
+		Input split bytes=140
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3306306
+		Reduce shuffle bytes=224761968
+		Reduce input records=6612612
+		Reduce output records=1393
+		Spilled Records=19837836
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=355
+		Total committed heap usage (bytes)=1433403392
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52467
+	File Output Format Counters 
+		Bytes Written=27655
+2017-03-08 05:25:13,355 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 05:25:15,640 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2017-03-08 05:25:15,650 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2017-03-08 05:25:16,189 WARN org.apache.hadoop.mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2017-03-08 05:25:16,474 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2017-03-08 05:25:17,010 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2017-03-08 05:25:17,662 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local187983690_0001
+2017-03-08 05:25:19,540 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2017-03-08 05:25:19,546 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local187983690_0001
+2017-03-08 05:25:19,563 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2017-03-08 05:25:19,604 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:25:19,606 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2017-03-08 05:25:20,218 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2017-03-08 05:25:20,231 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local187983690_0001_m_000000_0
+2017-03-08 05:25:20,569 INFO org.apache.hadoop.mapreduce.Job: Job job_local187983690_0001 running in uber mode : false
+2017-03-08 05:25:20,571 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2017-03-08 05:25:20,620 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:25:20,724 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:25:20,780 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/inputSimilarity/part-r-00000:0+52467
+2017-03-08 05:25:21,165 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2017-03-08 05:25:21,168 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2017-03-08 05:25:21,170 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2017-03-08 05:25:21,170 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2017-03-08 05:25:21,170 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2017-03-08 05:25:21,211 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2017-03-08 05:25:23,190 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:25:23,191 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 55585922; bufvoid = 104857600
+2017-03-08 05:25:23,191 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 19139356(76557424); length = 7075041/6553600
+2017-03-08 05:25:23,192 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 62725138 kvi 15681280(62725120)
+2017-03-08 05:25:26,852 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:27,591 INFO org.apache.hadoop.mapreduce.Job:  map 54% reduce 0%
+2017-03-08 05:25:29,858 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:32,859 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:33,864 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2017-03-08 05:25:33,865 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 62725138 kv 15681280(62725120) kvi 14029940(56119760)
+2017-03-08 05:25:35,000 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:25:35,003 INFO org.apache.hadoop.mapred.MapTask: bufstart = 62725138; bufend = 14126039; bufvoid = 104857600
+2017-03-08 05:25:35,005 INFO org.apache.hadoop.mapred.MapTask: kvstart = 15681280(62725120); kvend = 8774384(35097536); length = 6906897/6553600
+2017-03-08 05:25:35,007 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 21265255 kvi 5316308(21265232)
+2017-03-08 05:25:35,861 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:36,602 INFO org.apache.hadoop.mapreduce.Job:  map 67% reduce 0%
+2017-03-08 05:25:38,863 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:41,864 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:44,013 INFO org.apache.hadoop.mapred.MapTask: Finished spill 1
+2017-03-08 05:25:44,014 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 21265255 kv 5316308(21265232) kvi 3532176(14128704)
+2017-03-08 05:25:44,874 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:44,982 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:25:44,983 INFO org.apache.hadoop.mapred.MapTask: bufstart = 21265255; bufend = 77109138; bufvoid = 104857600
+2017-03-08 05:25:44,987 INFO org.apache.hadoop.mapred.MapTask: kvstart = 5316308(21265232); kvend = 24520156(98080624); length = 7010553/6553600
+2017-03-08 05:25:44,989 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 84248354 kvi 21062084(84248336)
+2017-03-08 05:25:47,877 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:50,880 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:53,883 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:56,666 INFO org.apache.hadoop.mapred.MapTask: Finished spill 2
+2017-03-08 05:25:56,666 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 84248354 kv 21062084(84248336) kvi 19296076(77184304)
+2017-03-08 05:25:56,885 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:57,389 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:25:57,393 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2017-03-08 05:25:57,395 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:25:57,395 INFO org.apache.hadoop.mapred.MapTask: bufstart = 84248354; bufend = 23248995; bufvoid = 104857600
+2017-03-08 05:25:57,396 INFO org.apache.hadoop.mapred.MapTask: kvstart = 21062084(84248336); kvend = 15604136(62416544); length = 5457949/6553600
+2017-03-08 05:25:59,891 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort
+2017-03-08 05:25:59,992 INFO org.apache.hadoop.mapred.MapTask: Finished spill 3
+2017-03-08 05:26:00,047 INFO org.apache.hadoop.mapred.Merger: Merging 4 sorted segments
+2017-03-08 05:26:00,178 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 4 segments left of total size: 224771750 bytes
+2017-03-08 05:26:02,896 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:26:03,625 INFO org.apache.hadoop.mapreduce.Job:  map 76% reduce 0%
+2017-03-08 05:26:05,899 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:26:06,629 INFO org.apache.hadoop.mapreduce.Job:  map 82% reduce 0%
+2017-03-08 05:26:08,902 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:26:09,632 INFO org.apache.hadoop.mapreduce.Job:  map 92% reduce 0%
+2017-03-08 05:26:11,351 INFO org.apache.hadoop.mapred.Task: Task:attempt_local187983690_0001_m_000000_0 is done. And is in the process of committing
+2017-03-08 05:26:11,360 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort
+2017-03-08 05:26:11,362 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local187983690_0001_m_000000_0' done.
+2017-03-08 05:26:11,363 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local187983690_0001_m_000000_0
+2017-03-08 05:26:11,366 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2017-03-08 05:26:11,398 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2017-03-08 05:26:11,399 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local187983690_0001_r_000000_0
+2017-03-08 05:26:11,496 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:26:11,504 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:26:11,583 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@48cc9f29
+2017-03-08 05:26:11,635 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 0%
+2017-03-08 05:26:11,725 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=1254044416, maxSingleShuffleLimit=313511104, mergeThreshold=827669376, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2017-03-08 05:26:11,751 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local187983690_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2017-03-08 05:26:12,022 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local187983690_0001_m_000000_0 decomp: 224771775 len: 224771779 to MEMORY
+2017-03-08 05:26:12,595 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 224771775 bytes from map-output for attempt_local187983690_0001_m_000000_0
+2017-03-08 05:26:12,603 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 224771775, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->224771775
+2017-03-08 05:26:12,610 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2017-03-08 05:26:12,614 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2017-03-08 05:26:12,616 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2017-03-08 05:26:12,619 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2017-03-08 05:26:12,619 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 224771769 bytes
+2017-03-08 05:26:17,499 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > sort
+2017-03-08 05:26:17,640 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 65%
+2017-03-08 05:26:17,953 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 1 segments, 224771775 bytes to disk to satisfy reduce memory limit
+2017-03-08 05:26:17,954 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 224771779 bytes from disk
+2017-03-08 05:26:17,958 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2017-03-08 05:26:17,959 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2017-03-08 05:26:17,960 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 224771769 bytes
+2017-03-08 05:26:17,961 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > sort
+2017-03-08 05:26:18,121 INFO org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2017-03-08 05:26:20,502 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:20,643 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 69%
+2017-03-08 05:26:23,504 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:23,646 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 72%
+2017-03-08 05:26:26,506 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:26,649 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 76%
+2017-03-08 05:26:29,508 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:29,671 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 79%
+2017-03-08 05:26:32,510 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:32,675 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 82%
+2017-03-08 05:26:35,511 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:35,677 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 87%
+2017-03-08 05:26:38,513 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:38,680 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 89%
+2017-03-08 05:26:41,514 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:41,683 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 93%
+2017-03-08 05:26:44,517 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:44,708 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 97%
+2017-03-08 05:26:47,034 INFO org.apache.hadoop.mapred.Task: Task:attempt_local187983690_0001_r_000000_0 is done. And is in the process of committing
+2017-03-08 05:26:47,076 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:47,079 INFO org.apache.hadoop.mapred.Task: Task attempt_local187983690_0001_r_000000_0 is allowed to commit now
+2017-03-08 05:26:47,438 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local187983690_0001_r_000000_0' to file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/outputAllPairWise/_temporary/0/task_local187983690_0001_r_000000
+2017-03-08 05:26:47,443 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:26:47,443 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local187983690_0001_r_000000_0' done.
+2017-03-08 05:26:47,444 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local187983690_0001_r_000000_0
+2017-03-08 05:26:47,446 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2017-03-08 05:26:47,717 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2017-03-08 05:26:48,719 INFO org.apache.hadoop.mapreduce.Job: Job job_local187983690_0001 completed successfully
+2017-03-08 05:26:48,843 INFO org.apache.hadoop.mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=899192510
+		FILE: Number of bytes written=1124410043
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2572
+		Map output records=6612613
+		Map output bytes=211546547
+		Map output materialized bytes=224771779
+		Input split bytes=140
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=6612613
+		Reduce shuffle bytes=224771779
+		Reduce input records=6612613
+		Reduce output records=0
+		Spilled Records=19837839
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=423
+		Total committed heap usage (bytes)=1522008064
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52467
+	File Output Format Counters 
+		Bytes Written=8
+2017-03-08 05:28:47,815 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 05:28:50,277 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2017-03-08 05:28:50,296 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2017-03-08 05:28:51,043 WARN org.apache.hadoop.mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2017-03-08 05:28:51,255 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2017-03-08 05:28:51,650 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2017-03-08 05:28:52,337 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local2137040381_0001
+2017-03-08 05:28:53,448 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2017-03-08 05:28:53,455 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local2137040381_0001
+2017-03-08 05:28:53,508 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2017-03-08 05:28:53,638 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:28:53,651 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2017-03-08 05:28:54,334 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2017-03-08 05:28:54,450 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local2137040381_0001_m_000000_0
+2017-03-08 05:28:54,504 INFO org.apache.hadoop.mapreduce.Job: Job job_local2137040381_0001 running in uber mode : false
+2017-03-08 05:28:54,508 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2017-03-08 05:28:55,507 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:28:55,605 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:28:55,643 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/inputSimilarity/part-r-00000:0+52467
+2017-03-08 05:28:56,056 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2017-03-08 05:28:56,059 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2017-03-08 05:28:56,060 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2017-03-08 05:28:56,062 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2017-03-08 05:28:56,062 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2017-03-08 05:28:56,114 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2017-03-08 05:28:57,835 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:28:57,836 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 55558974; bufvoid = 104857600
+2017-03-08 05:28:57,837 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 19132624(76530496); length = 7081773/6553600
+2017-03-08 05:28:57,838 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 62698206 kvi 15674544(62698176)
+2017-03-08 05:29:01,583 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:01,898 INFO org.apache.hadoop.mapreduce.Job:  map 38% reduce 0%
+2017-03-08 05:29:04,587 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:07,589 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:09,567 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2017-03-08 05:29:09,569 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 62698206 kv 15674544(62698176) kvi 13961124(55844496)
+2017-03-08 05:29:10,520 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:29:10,521 INFO org.apache.hadoop.mapred.MapTask: bufstart = 62698206; bufend = 13662677; bufvoid = 104857600
+2017-03-08 05:29:10,521 INFO org.apache.hadoop.mapred.MapTask: kvstart = 15674544(62698176); kvend = 8658544(34634176); length = 7016001/6553600
+2017-03-08 05:29:10,522 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 20801893 kvi 5200468(20801872)
+2017-03-08 05:29:10,590 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:10,906 INFO org.apache.hadoop.mapreduce.Job:  map 49% reduce 0%
+2017-03-08 05:29:13,593 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:13,910 INFO org.apache.hadoop.mapreduce.Job:  map 51% reduce 0%
+2017-03-08 05:29:16,595 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:19,597 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:21,858 INFO org.apache.hadoop.mapred.MapTask: Finished spill 1
+2017-03-08 05:29:21,860 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 20801893 kv 5200468(20801872) kvi 3532152(14128608)
+2017-03-08 05:29:22,599 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:22,920 INFO org.apache.hadoop.mapreduce.Job:  map 58% reduce 0%
+2017-03-08 05:29:22,932 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:29:22,933 INFO org.apache.hadoop.mapred.MapTask: bufstart = 20801893; bufend = 77110300; bufvoid = 104857600
+2017-03-08 05:29:22,933 INFO org.apache.hadoop.mapred.MapTask: kvstart = 5200468(20801872); kvend = 24520448(98081792); length = 6894421/6553600
+2017-03-08 05:29:22,934 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 84249516 kvi 21062372(84249488)
+2017-03-08 05:29:25,602 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:25,923 INFO org.apache.hadoop.mapreduce.Job:  map 62% reduce 0%
+2017-03-08 05:29:28,603 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:31,102 INFO org.apache.hadoop.mapred.MapTask: Finished spill 2
+2017-03-08 05:29:31,103 INFO org.apache.hadoop.mapred.MapTask: (RESET) equator 84249516 kv 21062372(84249488) kvi 19351036(77404144)
+2017-03-08 05:29:31,605 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:31,718 INFO org.apache.hadoop.mapred.LocalJobRunner: map > map
+2017-03-08 05:29:31,719 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2017-03-08 05:29:31,720 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:29:31,720 INFO org.apache.hadoop.mapred.MapTask: bufstart = 84249516; bufend = 23033564; bufvoid = 104857600
+2017-03-08 05:29:31,724 INFO org.apache.hadoop.mapred.MapTask: kvstart = 21062372(84249488); kvend = 15624700(62498800); length = 5437673/6553600
+2017-03-08 05:29:31,931 INFO org.apache.hadoop.mapreduce.Job:  map 66% reduce 0%
+2017-03-08 05:29:34,611 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort
+2017-03-08 05:29:34,934 INFO org.apache.hadoop.mapreduce.Job:  map 67% reduce 0%
+2017-03-08 05:29:37,247 INFO org.apache.hadoop.mapred.MapTask: Finished spill 3
+2017-03-08 05:29:37,294 INFO org.apache.hadoop.mapred.Merger: Merging 4 sorted segments
+2017-03-08 05:29:37,383 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 4 segments left of total size: 224546010 bytes
+2017-03-08 05:29:37,622 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:29:40,626 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:29:40,940 INFO org.apache.hadoop.mapreduce.Job:  map 77% reduce 0%
+2017-03-08 05:29:43,627 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:29:43,943 INFO org.apache.hadoop.mapreduce.Job:  map 87% reduce 0%
+2017-03-08 05:29:46,629 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort > 
+2017-03-08 05:29:46,946 INFO org.apache.hadoop.mapreduce.Job:  map 98% reduce 0%
+2017-03-08 05:29:47,405 INFO org.apache.hadoop.mapred.Task: Task:attempt_local2137040381_0001_m_000000_0 is done. And is in the process of committing
+2017-03-08 05:29:47,419 INFO org.apache.hadoop.mapred.LocalJobRunner: map > sort
+2017-03-08 05:29:47,420 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local2137040381_0001_m_000000_0' done.
+2017-03-08 05:29:47,420 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local2137040381_0001_m_000000_0
+2017-03-08 05:29:47,421 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2017-03-08 05:29:47,431 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2017-03-08 05:29:47,432 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local2137040381_0001_r_000000_0
+2017-03-08 05:29:47,490 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:29:47,493 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:29:47,598 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@71e56215
+2017-03-08 05:29:47,836 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=1254044416, maxSingleShuffleLimit=313511104, mergeThreshold=827669376, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2017-03-08 05:29:47,855 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local2137040381_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2017-03-08 05:29:47,947 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 0%
+2017-03-08 05:29:48,177 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local2137040381_0001_m_000000_0 decomp: 224546042 len: 224546046 to MEMORY
+2017-03-08 05:29:49,358 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 224546042 bytes from map-output for attempt_local2137040381_0001_m_000000_0
+2017-03-08 05:29:49,375 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 224546042, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->224546042
+2017-03-08 05:29:49,392 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2017-03-08 05:29:49,394 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2017-03-08 05:29:49,394 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2017-03-08 05:29:49,397 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2017-03-08 05:29:49,409 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 224546029 bytes
+2017-03-08 05:29:53,524 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > sort
+2017-03-08 05:29:53,952 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 55%
+2017-03-08 05:29:55,631 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 1 segments, 224546042 bytes to disk to satisfy reduce memory limit
+2017-03-08 05:29:55,632 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 224546046 bytes from disk
+2017-03-08 05:29:55,637 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2017-03-08 05:29:55,637 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2017-03-08 05:29:55,639 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 224546029 bytes
+2017-03-08 05:29:55,640 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > sort
+2017-03-08 05:29:55,966 INFO org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2017-03-08 05:29:56,533 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:29:56,954 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 67%
+2017-03-08 05:29:59,536 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:29:59,963 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 69%
+2017-03-08 05:30:02,538 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:02,967 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 74%
+2017-03-08 05:30:05,540 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:05,975 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 77%
+2017-03-08 05:30:08,542 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:08,988 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 80%
+2017-03-08 05:30:11,544 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:11,997 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 84%
+2017-03-08 05:30:14,547 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:15,001 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 88%
+2017-03-08 05:30:17,567 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:18,067 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 92%
+2017-03-08 05:30:20,583 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:21,116 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 94%
+2017-03-08 05:30:23,585 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:24,126 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 96%
+2017-03-08 05:30:26,587 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:26,726 INFO org.apache.hadoop.mapred.Task: Task:attempt_local2137040381_0001_r_000000_0 is done. And is in the process of committing
+2017-03-08 05:30:26,740 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:26,741 INFO org.apache.hadoop.mapred.Task: Task attempt_local2137040381_0001_r_000000_0 is allowed to commit now
+2017-03-08 05:30:26,791 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local2137040381_0001_r_000000_0' to file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/outputAllPairWise/_temporary/0/task_local2137040381_0001_r_000000
+2017-03-08 05:30:26,794 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:30:26,796 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local2137040381_0001_r_000000_0' done.
+2017-03-08 05:30:26,796 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local2137040381_0001_r_000000_0
+2017-03-08 05:30:26,796 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2017-03-08 05:30:27,149 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2017-03-08 05:30:35,160 INFO org.apache.hadoop.mapreduce.Job: Job job_local2137040381_0001 completed successfully
+2017-03-08 05:30:35,346 INFO org.apache.hadoop.mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=898289578
+		FILE: Number of bytes written=1123311953
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2572
+		Map output records=6607470
+		Map output bytes=211331100
+		Map output materialized bytes=224546046
+		Input split bytes=140
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=3303735
+		Reduce shuffle bytes=224546046
+		Reduce input records=6607470
+		Reduce output records=1393
+		Spilled Records=19822410
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=451
+		Total committed heap usage (bytes)=1620574208
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52467
+	File Output Format Counters 
+		Bytes Written=27655
+2017-03-08 05:33:54,261 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-08 05:33:58,660 INFO org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2017-03-08 05:33:58,673 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2017-03-08 05:33:59,285 WARN org.apache.hadoop.mapreduce.JobResourceUploader: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2017-03-08 05:33:59,594 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 1
+2017-03-08 05:34:00,295 INFO org.apache.hadoop.mapreduce.JobSubmitter: number of splits:1
+2017-03-08 05:34:00,905 INFO org.apache.hadoop.mapreduce.JobSubmitter: Submitting tokens for job: job_local1701109399_0001
+2017-03-08 05:34:02,217 INFO org.apache.hadoop.mapreduce.Job: The url to track the job: http://localhost:8080/
+2017-03-08 05:34:02,229 INFO org.apache.hadoop.mapreduce.Job: Running job: job_local1701109399_0001
+2017-03-08 05:34:02,322 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2017-03-08 05:34:02,462 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:34:02,478 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2017-03-08 05:34:03,131 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2017-03-08 05:34:03,134 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1701109399_0001_m_000000_0
+2017-03-08 05:34:03,293 INFO org.apache.hadoop.mapreduce.Job: Job job_local1701109399_0001 running in uber mode : false
+2017-03-08 05:34:03,296 INFO org.apache.hadoop.mapreduce.Job:  map 0% reduce 0%
+2017-03-08 05:34:03,456 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:34:03,532 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:34:03,549 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/inputSimilarity/part-r-00000:0+52467
+2017-03-08 05:34:03,793 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2017-03-08 05:34:03,795 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2017-03-08 05:34:03,798 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2017-03-08 05:34:03,799 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2017-03-08 05:34:03,800 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2017-03-08 05:34:03,875 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2017-03-08 05:34:06,223 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2017-03-08 05:34:06,225 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2017-03-08 05:34:06,225 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2017-03-08 05:34:06,226 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 39666; bufvoid = 104857600
+2017-03-08 05:34:06,227 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26204112(104816448); length = 10285/6553600
+2017-03-08 05:34:06,777 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2017-03-08 05:34:06,806 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1701109399_0001_m_000000_0 is done. And is in the process of committing
+2017-03-08 05:34:06,935 INFO org.apache.hadoop.mapred.LocalJobRunner: map
+2017-03-08 05:34:06,936 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1701109399_0001_m_000000_0' done.
+2017-03-08 05:34:06,937 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1701109399_0001_m_000000_0
+2017-03-08 05:34:06,939 INFO org.apache.hadoop.mapred.LocalJobRunner: map task executor complete.
+2017-03-08 05:34:06,955 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for reduce tasks
+2017-03-08 05:34:06,957 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1701109399_0001_r_000000_0
+2017-03-08 05:34:07,038 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2017-03-08 05:34:07,041 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2017-03-08 05:34:07,087 INFO org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4b29670c
+2017-03-08 05:34:07,262 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: MergerManager: memoryLimit=1254044416, maxSingleShuffleLimit=313511104, mergeThreshold=827669376, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2017-03-08 05:34:07,287 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: attempt_local1701109399_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2017-03-08 05:34:07,369 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 0%
+2017-03-08 05:34:07,856 INFO org.apache.hadoop.mapreduce.task.reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1701109399_0001_m_000000_0 decomp: 44812 len: 44816 to MEMORY
+2017-03-08 05:34:07,949 INFO org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput: Read 44812 bytes from map-output for attempt_local1701109399_0001_m_000000_0
+2017-03-08 05:34:07,986 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 44812, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->44812
+2017-03-08 05:34:08,020 INFO org.apache.hadoop.mapreduce.task.reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2017-03-08 05:34:08,022 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2017-03-08 05:34:08,024 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2017-03-08 05:34:08,158 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2017-03-08 05:34:08,160 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 44808 bytes
+2017-03-08 05:34:08,227 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merged 1 segments, 44812 bytes to disk to satisfy reduce memory limit
+2017-03-08 05:34:08,230 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 1 files, 44816 bytes from disk
+2017-03-08 05:34:08,241 INFO org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2017-03-08 05:34:08,244 INFO org.apache.hadoop.mapred.Merger: Merging 1 sorted segments
+2017-03-08 05:34:08,248 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 44808 bytes
+2017-03-08 05:34:08,249 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2017-03-08 05:34:08,792 INFO org.apache.hadoop.conf.Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2017-03-08 05:34:09,518 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1701109399_0001_r_000000_0 is done. And is in the process of committing
+2017-03-08 05:34:09,555 INFO org.apache.hadoop.mapred.LocalJobRunner: 1 / 1 copied.
+2017-03-08 05:34:09,558 INFO org.apache.hadoop.mapred.Task: Task attempt_local1701109399_0001_r_000000_0 is allowed to commit now
+2017-03-08 05:34:09,678 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1701109399_0001_r_000000_0' to file:/media/sf_Documents/GitHub/HadoopSAMOUHM2/outputInvIndex/_temporary/0/task_local1701109399_0001_r_000000
+2017-03-08 05:34:09,692 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2017-03-08 05:34:09,693 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1701109399_0001_r_000000_0' done.
+2017-03-08 05:34:09,694 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1701109399_0001_r_000000_0
+2017-03-08 05:34:09,704 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce task executor complete.
+2017-03-08 05:34:10,411 INFO org.apache.hadoop.mapreduce.Job:  map 100% reduce 100%
+2017-03-08 05:34:11,414 INFO org.apache.hadoop.mapreduce.Job: Job job_local1701109399_0001 completed successfully
+2017-03-08 05:34:11,503 INFO org.apache.hadoop.mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=194990
+		FILE: Number of bytes written=716088
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=2572
+		Map output records=2572
+		Map output bytes=39666
+		Map output materialized bytes=44816
+		Input split bytes=140
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1428
+		Reduce shuffle bytes=44816
+		Reduce input records=2572
+		Reduce output records=1389
+		Spilled Records=5144
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=51
+		Total committed heap usage (bytes)=451936256
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=52467
+	File Output Format Counters 
+		Bytes Written=27576

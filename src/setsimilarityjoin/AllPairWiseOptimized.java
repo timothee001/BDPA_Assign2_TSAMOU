@@ -42,7 +42,7 @@ import preprocessing.WordCount;
 
 public class AllPairWiseOptimized extends Configured implements Tool{
 
-	static double thresold =0.1;
+	static double thresold =0.2;
 	
 	
 	static HashMap <Long, String> docString = new HashMap <Long, String>();
@@ -62,12 +62,12 @@ public class AllPairWiseOptimized extends Configured implements Tool{
 	    Set<String> set1 =   new HashSet<String>();
 	    Set<String> set2 =   new HashSet<String>();
 	    
-	    String[] parts = s1.split(" +");
+	    String[] parts = s1.split("\\s+");
 	    for(String p : parts) {
 	    	set1.add(p);
 	    }
 	    
-	    String[] parts2 = s2.split(" +");
+	    String[] parts2 = s2.split("\\s+");
 	    for(String p : parts2) {
 	    	set2.add(p);
 	    }
@@ -126,12 +126,12 @@ public class AllPairWiseOptimized extends Configured implements Tool{
 	    	Doc currentDoc = new Doc(key.get(),value.toString());
 	    	
 	    	int mapSize = map.size();
-	    	for(int i=mapSize-1;i>0;i--){
+	    	for(int i=mapSize-1;i>=0;i--){
 	    		
 	    		
 	    		
-	    		String [] parts = currentDoc.GetContent().split(" +");
-	    		String [] parts2 = map.get(i).GetContent().split(" +");
+	    		String [] parts = currentDoc.GetContent().split("\\s+");
+	    		String [] parts2 = map.get(i).GetContent().split("\\s+");
 	    		
 	    	
 	    		 Set<String> set1 =   new HashSet<String>();
@@ -151,9 +151,12 @@ public class AllPairWiseOptimized extends Configured implements Tool{
 	    			intersect.addAll(set1);
 	    			intersect.retainAll(set2);
 	    			
+	    			long minId=Math.min(currentDoc.GetId(), map.get(i).GetId());
+	    			long maxId=Math.max(currentDoc.GetId(), map.get(i).GetId());
+	    			
 	    			if(intersect.size()>0){
-	    				context.write(new Text(currentDoc.GetId()+"_"+map.get(i).GetId()), new Text(currentDoc.GetContent()));
-	    	    		context.write(new Text(currentDoc.GetId()+"_"+map.get(i).GetId()), new Text(map.get(i).GetContent()));	
+	    				context.write(new Text(minId+"_"+maxId), new Text(currentDoc.GetContent()));
+	    	    		context.write(new Text(minId+"_"+maxId), new Text(map.get(i).GetContent()));	
 	    			}
 	    		
 	    	}

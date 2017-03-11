@@ -62,12 +62,12 @@ public class AllPairWise extends Configured implements Tool{
 	    Set<String> set1 =   new HashSet<String>();
 	    Set<String> set2 =   new HashSet<String>();
 	    
-	    String[] parts = s1.split(" +");
+	    String[] parts = s1.split("\\s+");
 	    for(String p : parts) {
 	    	set1.add(p);
 	    }
 	    
-	    String[] parts2 = s2.split(" +");
+	    String[] parts2 = s2.split("\\s+");
 	    for(String p : parts2) {
 	    	set2.add(p);
 	    }
@@ -126,9 +126,11 @@ public class AllPairWise extends Configured implements Tool{
 	    	Doc currentDoc = new Doc(key.get(),value.toString());
 	    	
 	    	int mapSize = map.size();
-	    	for(int i=mapSize-1;i>0;i--){
-	    		context.write(new Text(currentDoc.GetId()+"_"+map.get(i).GetId()), new Text(currentDoc.GetContent()));
-	    		context.write(new Text(currentDoc.GetId()+"_"+map.get(i).GetId()), new Text(map.get(i).GetContent()));	
+	    	for(int i=mapSize-1;i>=0;i--){
+	    		long minId=Math.min(currentDoc.GetId(), map.get(i).GetId());
+    			long maxId=Math.max(currentDoc.GetId(), map.get(i).GetId());
+    			context.write(new Text(minId+"_"+maxId), new Text(currentDoc.GetContent()));
+    	    	context.write(new Text(minId+"_"+maxId), new Text(map.get(i).GetContent()));	
 	    	}
 	    	
 	    	map.add(currentDoc);
@@ -164,19 +166,11 @@ public class AllPairWise extends Configured implements Tool{
 	    	  Double sim = AllPairWise.similarity(s1.toString(), s2.toString());
 	    	  if(sim>=AllPairWise.thresold)
 	    		  context.write(new Text("(d"+keys[0]+",d"+keys[1]+")"), new Text(sim.toString()));
-	    	  
-	    	  
-	    	  
+ 
 	         //context.write(key,new LongWritable(sum));
 	      }
 	      
-	      
-	      protected void cleanup(Context ctxt) throws IOException,InterruptedException {
-	    	   //we call this fonction once at the end
-	          
-	       }
-	           
-	      
+	     
 	   }
 	
 

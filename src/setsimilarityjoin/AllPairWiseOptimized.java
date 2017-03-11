@@ -42,7 +42,7 @@ import preprocessing.WordCount;
 
 public class AllPairWiseOptimized extends Configured implements Tool{
 
-	static double thresold =0.2;
+	static double thresold =0.5;
 	
 	
 	static HashMap <Long, String> docString = new HashMap <Long, String>();
@@ -155,8 +155,8 @@ public class AllPairWiseOptimized extends Configured implements Tool{
 	    			long maxId=Math.max(currentDoc.GetId(), map.get(i).GetId());
 	    			
 	    			if(intersect.size()>0){
-	    				context.write(new Text(minId+"_"+maxId), new Text(currentDoc.GetContent()));
-	    	    		context.write(new Text(minId+"_"+maxId), new Text(map.get(i).GetContent()));	
+	    				context.write(new Text(minId+"_"+maxId), new Text(currentDoc.GetContent().trim()));
+	    	    		context.write(new Text(minId+"_"+maxId), new Text(map.get(i).GetContent().trim()));	
 	    			}
 	    		
 	    	}

@@ -42,7 +42,7 @@ import preprocessing.WordCount;
 
 public class InvertedIndex extends Configured implements Tool{
 
-	static double thresold =0.2;
+	static double thresold =0.5;
 	static HashMap<Long,String> docs = new HashMap<Long,String>();
 
 	public static void main(String[] args) throws Exception {
@@ -174,10 +174,13 @@ public class InvertedIndex extends Configured implements Tool{
 	    				  long iddoc1 = Math.min(docsId.get(i), docsId.get(j));
 	    				  long iddoc2 = Math.max(docsId.get(i), docsId.get(j));
 	    				  
-
+	    				  if(iddoc1!=iddoc2){
 	    					  Double sim = InvertedIndex.similarity(docs.get(iddoc1),docs.get(iddoc2));
 		    		    	  if(sim>=InvertedIndex.thresold)
-		    		    		  map.put("(d"+iddoc1+",d"+iddoc2+")", sim.toString());			  
+		    		    		  map.put("(d"+iddoc1+",d"+iddoc2+")", sim.toString());		
+	    				  }
+
+	    					  	  
 	    				  }
 	  
 	    		  }

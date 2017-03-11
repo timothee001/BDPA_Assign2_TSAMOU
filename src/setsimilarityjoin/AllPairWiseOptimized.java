@@ -40,30 +40,18 @@ import ReadCSV.ReadCSV;
 import preprocessing.WordCount;
 
 
-public class InvertedIndex extends Configured implements Tool{
+public class AllPairWiseOptimized extends Configured implements Tool{
 
 	static double thresold =0.1;
-	static HashMap<Long,String> docs = new HashMap<Long,String>();
-
+	
+	
+	static HashMap <Long, String> docString = new HashMap <Long, String>();
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("Beginningg");  
 		//frequencies = WordCount.getFrequencyDict(args);
-		int res = ToolRunner.run(new Configuration(), new InvertedIndex(), args);
+		int res = ToolRunner.run(new Configuration(), new AllPairWiseOptimized(), args);
 		System.out.println("Ending");  
-	}
-	
-	public static int getNumberOfWordsToKeep(String document){
-		
-		int wordsNumber = countWords(document.trim());
-		//System.out.println(document + " "+wordsNumber);
-		double td = Math.ceil(thresold * (double)wordsNumber);
-		return wordsNumber - (int)td  +1;
-	}
-	
-	public static int countWords(String s){
-
-	    return s.trim().split("\\s+").length;
 	}
 	
 	public static double similarity(String s1, String s2) {
@@ -101,11 +89,11 @@ public class InvertedIndex extends Configured implements Tool{
 		
 	      Configuration configuration = this.getConf();
 	     
-	      Job job = new Job(configuration, "InvertedIndex");
+	      Job job = new Job(configuration, "AllPairWiseOptimizedJob");
 	      job.setNumReduceTasks(1);
-	      job.setJarByClass(InvertedIndex.class);
+	      job.setJarByClass(AllPairWiseOptimized.class);
 	      job.setOutputKeyClass(Text.class);
-	      job.setOutputValueClass(LongWritable.class);
+	      job.setOutputValueClass(Text.class);
 
 	      job.setMapperClass(Map.class);
 	      job.setReducerClass(Reduce.class);
@@ -114,7 +102,7 @@ public class InvertedIndex extends Configured implements Tool{
 	      job.setOutputFormatClass(TextOutputFormat.class);
 
 	      FileInputFormat.addInputPath(job, new Path("inputSimilarity")); 
-	      Path outputPath = new Path("outputInvIndex");
+	      Path outputPath = new Path("outputAllPairWiseOptimized");
 	      FileOutputFormat.setOutputPath(job, outputPath);
 	      FileSystem hdfs = FileSystem.get(getConf());
 	    if (hdfs.exists(outputPath))
@@ -125,76 +113,95 @@ public class InvertedIndex extends Configured implements Tool{
 	      return 0;
 	}
 	
-	public static class Map extends Mapper<LongWritable, Text, Text, LongWritable> {
-	  
+	public static class Map extends Mapper<LongWritable, Text, Text, Text> {
+	      private final static LongWritable ONE = new LongWritable(1);
+	      private Text phrase = new Text();
+	     
+	      ArrayList<Doc> map = new ArrayList<Doc>();
 	     	
 	      @Override
 	      public void map(LongWritable key, Text value, Context context)
 	              throws IOException, InterruptedException {
-	    	
-	    	  docs.put(key.get(), value.toString());
-	    	  String[] parts = value.toString().split("\\s+");
-	    	//  System.out.println(value + " : "+getNumberOfWordsToKeep(value.toString()));
-	    	  String keytoemit ="";
-	    	  for(int i =0;i<getNumberOfWordsToKeep(value.toString());i++){
-	    		  
-	    		  //System.out.println(parts[i]);
-	    		  keytoemit=keytoemit+parts[i]+" ";
-	    	  } 
 	    	  
-	    	  context.write(new Text(keytoemit.trim()), key);
+	    	Doc currentDoc = new Doc(key.get(),value.toString());
+	    	
+	    	int mapSize = map.size();
+	    	for(int i=mapSize-1;i>0;i--){
+	    		
+	    		
+	    		
+	    		String [] parts = currentDoc.GetContent().split(" +");
+	    		String [] parts2 = map.get(i).GetContent().split(" +");
+	    		
+	    	
+	    		 Set<String> set1 =   new HashSet<String>();
+	    		 Set<String> set2 =   new HashSet<String>();
+	    		    
+	    		    
+	    		    for(String p : parts) {
+	    		    	set1.add(p);
+	    		    }
+	    		    
+	    		    
+	    		    for(String p : parts2) {
+	    		    	set2.add(p);
+	    		    }
+	    		    Set<String> intersect = new HashSet<>();
+	    		    intersect.clear();
+	    			intersect.addAll(set1);
+	    			intersect.retainAll(set2);
+	    			
+	    			if(intersect.size()>0){
+	    				context.write(new Text(currentDoc.GetId()+"_"+map.get(i).GetId()), new Text(currentDoc.GetContent()));
+	    	    		context.write(new Text(currentDoc.GetId()+"_"+map.get(i).GetId()), new Text(map.get(i).GetContent()));	
+	    			}
+	    		
+	    	}
+	    	
+	    	map.add(currentDoc);
+	    	
+	    	
 	      }
 	      
 	    
 	 }
 
-	   public static class Reduce extends Reducer<Text, LongWritable, Text, Text> {
+	   public static class Reduce extends Reducer<Text, Text, Text, Text> {
 	      
-		  
+	     
 	      @Override
-	      public void reduce(Text key, Iterable<LongWritable> values, Context context)
+	      public void reduce(Text key, Iterable<Text> values, Context context)
 	              throws IOException, InterruptedException {
 	    	  
-	    	  ArrayList<Long> docsId = new ArrayList<Long>();
-	    	  //System.out.println(key +" : ");
+	    	  Text s1 = new Text();
+	    	  Text s2 = new Text();
+	    	  
+	    	  int count = 0;
+	    	  for (Text val : values) {
+	        	  if(count==0){
+	        		  s1.set(val);
+	        	  }else{
+	        		  s2.set(val);
+	        	  }
+	        	  count++;
+	          }
+	    	  
+	    	  
+	    	  String [] keys = key.toString().split("_");
+	    	  Double sim = AllPairWiseOptimized.similarity(s1.toString(), s2.toString());
+	    	  if(sim>=AllPairWiseOptimized.thresold)
+	    		  context.write(new Text("(d"+keys[0]+",d"+keys[1]+")"), new Text(sim.toString()));
 	    	  
 	    	  
 	    	  
-	    	  for (LongWritable entry : values) {
-	    		    docsId.add(entry.get());   
-	    	  }
-	    	  
-	    	  for(int i=0;i<docsId.size();i++){
-	    		  
-	    		  for(int j=i;j<docsId.size();j++){
-	    			  
-	    			  if(j!=i){
-	    				  
-	    				  long iddoc1 = docsId.get(i);
-	    				  
-	    				  long iddoc2 =  docsId.get(j);
-	    				  
-	    				  
-	    				  
-	    				  Double sim = InvertedIndex.similarity(docs.get(iddoc1),docs.get(iddoc2));
-	    		    	  if(sim>=InvertedIndex.thresold)
-	    		    		  context.write(new Text("(d"+iddoc1+",d"+iddoc2+")"), new Text(sim.toString()));
-	    				  
-	    				  
-	    			  }
-	    			  
-	    		  }
-	    		  
-	    		  
-	    	  }
-	    	  
-	  
+	         //context.write(key,new LongWritable(sum));
 	      }
-	    	  
-	       
 	      
 	      
-
+	      protected void cleanup(Context ctxt) throws IOException,InterruptedException {
+	    	   //we call this fonction once at the end
+	          
+	       }
 	           
 	      
 	   }

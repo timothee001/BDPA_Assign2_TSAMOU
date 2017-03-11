@@ -127,7 +127,8 @@ public class Preprocessing extends Configured implements Tool{
 	    	   //we call this fonction once at the end
 	           while (!wordDocs.isEmpty()) {
 	        	   
-	        	   WordDocs biggestWordDoc = wordDocs.pollLast();
+	        	   WordDocs biggestWordDoc = wordDocs.pollFirst();
+	        	  // System.out.println(biggestWordDoc.Size());
 	        	   TreeSet<Long> docIds = biggestWordDoc.GetTree();
 	        	   
 	        	   for(int i = 0;i<docIds.size();i++){

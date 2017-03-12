@@ -153,6 +153,7 @@ public class InvertedIndex extends Configured implements Tool{
 	   public static class Reduce extends Reducer<Text, LongWritable, Text, Text> {
 	      
 		  HashMap<String,String> map = new   HashMap<String,String> ();
+		  int comparisonCount =0;
 		   
 	      @Override
 	      public void reduce(Text key, Iterable<LongWritable> values, Context context)
@@ -176,6 +177,7 @@ public class InvertedIndex extends Configured implements Tool{
 	    				  
 	    				  if(iddoc1!=iddoc2){
 	    					  Double sim = InvertedIndex.similarity(docs.get(iddoc1),docs.get(iddoc2));
+	    					  comparisonCount++;
 		    		    	  if(sim>=InvertedIndex.thresold)
 		    		    		  map.put("(d"+iddoc1+",d"+iddoc2+")", sim.toString());		
 	    				  }
@@ -196,6 +198,8 @@ public class InvertedIndex extends Configured implements Tool{
 	    	    ctxt.write(new Text(entry.getKey()), new Text(entry.getValue()));
 	    	  }
 	    	  
+	    	  
+	    	  System.out.println("Number of comparison performed : " + comparisonCount);
 	          
 	       }
 	  

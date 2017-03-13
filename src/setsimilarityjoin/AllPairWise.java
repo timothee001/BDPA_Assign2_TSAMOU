@@ -42,7 +42,7 @@ import preprocessing.WordCount;
 
 public class AllPairWise extends Configured implements Tool{
 
-	static double thresold =0.8;
+	static double thresold =0.5;
 	
 	
 	static HashMap <Long, String> docString = new HashMap <Long, String>();
@@ -143,7 +143,7 @@ public class AllPairWise extends Configured implements Tool{
 
 	   public static class Reduce extends Reducer<Text, Text, Text, Text> {
 	      
-	     
+		   int comparisonCount =0;
 	      @Override
 	      public void reduce(Text key, Iterable<Text> values, Context context)
 	              throws IOException, InterruptedException {
@@ -164,11 +164,19 @@ public class AllPairWise extends Configured implements Tool{
 	    	  
 	    	  String [] keys = key.toString().split("_");
 	    	  Double sim = AllPairWise.similarity(s1.toString(), s2.toString());
+	    	  comparisonCount++;
 	    	  if(sim>=AllPairWise.thresold)
 	    		  context.write(new Text("(d"+keys[0]+",d"+keys[1]+")"), new Text(sim.toString()));
  
 	         //context.write(key,new LongWritable(sum));
 	      }
+	      
+	      protected void cleanup(Context ctxt) throws IOException,InterruptedException {
+	    	   //we call this fonction once at the end
+	          
+	    	  System.out.println("Number of comparison performed : " + comparisonCount);
+	       }
+	           
 	      
 	     
 	   }
